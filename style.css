@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -12,4 +13,18 @@ body {
 
 .sidebar {
     grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr;
+    gap: 2.5rem;
+    color: white;
+    padding: 1rem;
+    background-color: blue;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.3rem;
+    display: grid;
+    gap: 3rem;
 }
