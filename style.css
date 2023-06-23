@@ -40,6 +40,12 @@ body {
 .row1 {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.row1 div {
+    display: flex;
+    gap: 2rem;
 }
 
 .search {
@@ -57,4 +63,34 @@ input::placeholder {
 
 img {
     width: 2.5rem;
+}
+
+.bigger {
+    width: 5rem;
+}
+
+.row2 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hi {
+    flex: 1;
+}
+
+.hi h1, h4 {
+    margin: 0;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 189);
 }
