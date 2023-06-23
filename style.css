@@ -14,7 +14,7 @@ body {
 .sidebar {
     grid-row: 1 / span 2;
     display: grid;
-    grid-template-rows: auto 1fr auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
     gap: 2.5rem;
     color: white;
     padding: 1rem;
@@ -106,10 +106,29 @@ button:hover {
 .content {
     background-color: rgb(226, 226, 226);
     display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
     grid-template: 1fr 1fr / 2fr 1fr;
     padding: 2rem;
+    gap: 2rem;
 }
 
 .projects {
     grid-row: 1 / span 2;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.card {
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
 }
