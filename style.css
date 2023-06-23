@@ -108,7 +108,7 @@ button:hover {
     display: grid;
     grid-row-start: 2;
     grid-column-start: 2;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 2rem;
     gap: 2rem;
 }
@@ -120,7 +120,7 @@ button:hover {
 .cards {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: repeat(auto-fit, 1fr);
 }
 
@@ -131,4 +131,30 @@ button:hover {
     padding: 3rem 2rem;
     border-right: 5px solid blue;
     border-bottom: 5px solid blue;
+}
+
+.announcements .card {
+    font-size: 0.85rem;
+    border-right: 5px solid rgb(255, 115, 0);
+    border-bottom: 5px solid rgb(255, 115, 0);
+}
+
+.trending .card {
+    font-size: 0.85rem;
+    border-right: 5px solid rgb(153, 0, 255);
+    border-bottom: 5px solid rgb(153, 0, 255);
+}
+
+.divider {
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile p {
+    margin: 0;
 }
